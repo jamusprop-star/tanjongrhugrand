@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 import { dirname } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const PORT = 3001;
+const PORT = 3004;
 
 const mime = {
   ".html": "text/html",
@@ -13,6 +13,7 @@ const mime = {
   ".js": "application/javascript",
   ".png": "image/png",
   ".jpg": "image/jpeg",
+  ".webp": "image/webp",
   ".svg": "image/svg+xml",
   ".ico": "image/x-icon",
 };
@@ -27,4 +28,4 @@ createServer(async (req, res) => {
     res.writeHead(404);
     res.end("Not found");
   }
-}).listen(PORT, () => console.log(`Thomson Reserve running at http://localhost:${PORT}`));
+}).listen(PORT, () => console.log(`Tanjong Rhu Grand running at http://localhost:${PORT}`));
